@@ -16,10 +16,10 @@ class WhatsappBot:
 
     def EnviarMensagens(self):
 
-        print('Programar')
+        print('LOADING..')
         self.driver.get('http://web.whatsapp.com/')
         time.sleep(30)
-        
+
         for grupo in self.grupos:
             grupo = self.driver.find_element(By.XPATH,"//span[@title='Edinho']")
 
